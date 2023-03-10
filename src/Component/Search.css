@@ -1,0 +1,35 @@
+.cardhover:hover {
+  cursor: pointer;
+
+  box-shadow: 5px 5px 10px 2px rgb(0, 179, 255);
+}
+.maincontainer {
+  position: relative;
+  width: 250px;
+  height: 320px;
+}
+.thecard {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: all 0.5s ease;
+}
+.thecard:hover {
+  transform: rotateY(180deg);
+}
+.thefront {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+.theback {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  background-color: azure;
+  color: black;
+  transform: rotateY(180deg);
+}
